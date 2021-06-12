@@ -1,0 +1,85 @@
+.about {
+  height: 100%;
+  background: #ffffff;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 90px;
+  align-items: center;
+  &__text {
+    padding: 70px 0px 50px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    & h2 {
+      font-size: 1rem;
+      color: #fa0347;
+      font-weight: 700;
+
+      font-family: "Open sans";
+    }
+    & h1 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      color: #2c3033;
+      line-height: 92px;
+      font-family: "Teko";
+      font-weight: 700;
+    }
+    & p {
+      font-family: "Open sans";
+      font-size: 16px;
+      font-weight: 100;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  & img {
+    width: 70%;
+    max-width: 400px;
+    height: 100%;
+  }
+  &__box {
+    width: 80%;
+    padding: 20px;
+    &__icon {
+      background: linear-gradient(right, #fa0347 0%, #fa0347 100%, #fc561c 0%);
+      color: #fff;
+      border-radius: 15% 15% 80% 15% / 15% 15% 30% 15%;
+      width: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 65px;
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-family: "Teko";
+      font-size: 18px;
+      color: #2c3033;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      &:hover {
+        color: #fa0347;
+      }
+    }
+    &__description {
+      font-size: 14px;
+      line-height: 30px;
+      font-family: "Open sans";
+      color: #8a8a8a;
+    }
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
